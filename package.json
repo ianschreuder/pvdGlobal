@@ -1,0 +1,9 @@
+{
+  "name": "pvdGlobal",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-coffee": "latest",
+    "grunt-contrib-watch": "latest"
+  }
+}

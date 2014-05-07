@@ -2,7 +2,7 @@
 
 angular
 
-  .module('pvdServices')
+  .module('pvdGlobal',['ngStorage'])
 
   .factory('global',['$localStorage',($localStorage) ->
     #

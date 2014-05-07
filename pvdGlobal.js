@@ -1,6 +1,6 @@
 (function() {
   'use strict';
-  angular.module('pvdServices').factory('global', [
+  angular.module('pvdGlobal', ['ngStorage']).factory('global', [
     '$localStorage', function($localStorage) {
       $localStorage.global || ($localStorage.global = {});
       return {

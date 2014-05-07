@@ -1,10 +1,9 @@
 {
   "name": "pvdGlobal",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "pvdGlobal.js",
   "dependencies": {
     "angular": ">= 1.2.16",
-    "pvdServices": "latest",
     "ngStorage": "latest"
   },
   "ignore": [

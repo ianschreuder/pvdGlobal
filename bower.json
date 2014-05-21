@@ -1,13 +1,13 @@
 {
   "name": "pvdGlobal",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "pvdGlobal.js",
   "dependencies": {
     "angular": ">= 1.2.16",
     "ngStorage": "latest"
   },
   "ignore": [
-    "Gruntfile.coffee",
+    "*.coffee",
     "*.json",
     "node_modules/",
     ".*"

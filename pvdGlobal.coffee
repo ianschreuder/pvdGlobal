@@ -10,23 +10,23 @@ angular
     $localStorage.global ||= {}
     #
     # Cache
-    cache: $localStorage.global
+    data: $localStorage.global
     #
     # Getter
     get: (attr) ->
-      @cache[attr]
+      @data[attr]
     #
     # Setter
     set: (attr,val) ->
-      @cache[attr] = val
+      @data[attr] = val
     #
     # Delete attr
     remove: (attr) ->
-      delete @cache[attr]
+      delete @data[attr]
     #
     # Get & delete from cache
     pull: (attr) ->
-      val = @cache[attr]
-      delete @cache[attr]
+      val = @data[attr]
+      delete @data[attr]
       val
   ])

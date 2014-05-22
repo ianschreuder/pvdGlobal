@@ -35,7 +35,7 @@ angular
   #
   # Module Service
   #
-  .factory('global',['$localStorage','pvdGlobal',($localStorage,pvdGobal) ->
+  .factory('global',['$localStorage','pvdGlobal',($localStorage,pvdGlobal) ->
     #
     # Init global object
     $localStorage.global ||= angular.extend({},pvdGlobal.config())

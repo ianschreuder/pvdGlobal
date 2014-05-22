@@ -30,7 +30,7 @@
       }
     };
   }).factory('global', [
-    '$localStorage', 'pvdGlobal', function($localStorage, pvdGobal) {
+    '$localStorage', 'pvdGlobal', function($localStorage, pvdGlobal) {
       $localStorage.global || ($localStorage.global = angular.extend({}, pvdGlobal.config()));
       return {
         data: $localStorage.global,

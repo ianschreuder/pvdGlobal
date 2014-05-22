@@ -1,6 +1,6 @@
 {
   "name": "pvdGlobal",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "main": "pvdGlobal.js",
   "dependencies": {
     "angular": ">=1.2.16",

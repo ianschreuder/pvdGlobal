@@ -1,13 +1,44 @@
+###
+
+  --------------------------------------------
+  Global object module
+  --------------------------------------------
+
+  Provides global shared object with configuration
+  to prevent pollution of $scope
+
+###
+
 'use strict'
 
 angular
 
+  #
+  # Module Definition
+  #
   .module('pvdGlobal',['ngStorage'])
 
-  .factory('global',['$localStorage',($localStorage) ->
+  #
+  # Module Provider
+  #
+  .provider('pvdGlobal', ->
+
+    _config = {}
+
+    config: (config={}) ->
+      angular.extend(_config,config)
+    $get: ->
+      config: ->
+        _config
+  )
+
+  #
+  # Module Service
+  #
+  .factory('global',['$localStorage','pvdGlobal',($localStorage,pvdGobal) ->
     #
     # Init global object
-    $localStorage.global ||= {}
+    $localStorage.global ||= angular.extend({},pvdGlobal.config())
     #
     # Cache
     data: $localStorage.global
